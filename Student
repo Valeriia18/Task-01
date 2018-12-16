@@ -1,0 +1,42 @@
+public class Student {
+
+    String Name;
+    int mark;
+    int group;
+    boolean isGrantedStudent;
+
+    public Student(String Name, int mark, int group, boolean isGrantedStudent) {
+        this.Name = Name;
+        this.mark = mark;
+        this.group = group;
+        this.isGrantedStudent = isGrantedStudent;
+    }
+
+    public Student(String Name, int mark) {
+        this.Name = Name;
+        this.mark = mark;
+        this.group = 0;
+        this.isGrantedStudent = false;
+
+    }
+
+    public Student() {
+        this.Name = "";
+        this.mark = 0;
+        this.group = 0;
+        this.isGrantedStudent = false;
+    }
+
+    @Override
+    public String toString() {
+        return Name + " : " + mark + "Группа: " + group + "Грант" + isGrantedStudent;
+    }
+
+    public int getName(int Age) {
+        if (Age <= 0) {
+            return 0;
+        } else {
+            return Age;
+        }
+    }
+}
